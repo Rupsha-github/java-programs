@@ -13,9 +13,11 @@ public class MoveZerosToEnd {
         return res;
     }
     public static void main(String args[]) {
-//         Scanner sc = new Scanner(System.in);
-//         System.out.println("Enter");
-            int arr[] = {0, 0, 0, 0, 2, 4, 0, 0, 0};
+    int arr[] = new int[5];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the values of the array");
+        for (int i = 0 ; i < 5 ; i++) arr[i] = sc.nextInt();
+//             int arr[] = {0, 0, 0, 0, 2, 4, 0, 0, 0};
             int res[] = func(arr);
             System.out.println(Arrays.toString(res));
     }
